@@ -1,0 +1,68 @@
+
+body{
+    background-color: black;
+    font-family: General Sans,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+.courses-list{
+  display: inline-block;  
+  width:40%;
+
+}
+
+.courses-image{
+
+    display:inline-block;
+    width:40%;
+   
+}
+.courses-complete{
+  display:flex;
+  flex-flow:row wrap;
+}
+.star-list {
+    list-style-type: none; 
+    padding-left: 0; 
+    color: #dee3ea;
+  }
+  
+  .star-list li:before {
+    content: "\2605"; 
+    margin-right: 0.5em;
+    color: rgb(89, 66, 233);
+  }
+  .h1{
+    color: #dee3ea;
+
+  }
+  .courses-button{
+    background-color:rgb(89, 66, 233);
+    color:rgba(222, 227, 234, 0.9);
+    font:medium;
+    padding-top:12px;
+    padding-bottom: 12px;
+    padding-left: 28px;
+    padding-right:28px;
+    transition-duration:0.075s;
+    cursor:pointer;
+    border:none;
+    font-size:14px;
+    border-radius:19px;
+
+  }
+  .courses-button:hover{
+    background-color:rgb(89,66,255);
+    
+  }
+  .courses-button:hover .button-arrow{
+    opacity:0;
+    }
+
+  .courses-button:hover::after{
+  content:" →";
+  }
+   .courses-image img {
+    width: 80%;
+    
+    object-fit: contain; 
+  }
